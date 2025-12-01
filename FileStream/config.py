@@ -4,16 +4,16 @@ from dotenv import load_dotenv
 load_dotenv()
 
 class Telegram:
-    API_ID = int(env.get("API_ID"))
-    API_HASH = str(env.get("API_HASH"))
-    BOT_TOKEN = str(env.get("BOT_TOKEN"))
-    OWNER_ID = int(env.get('OWNER_ID', '7978482443'))
-    WORKERS = int(env.get("WORKERS", "6"))  # 6 workers = 6 commands at once
-    DATABASE_URL = str(env.get('DATABASE_URL'))
-    UPDATES_CHANNEL = str(env.get('UPDATES_CHANNEL', "Telegram"))
-    SESSION_NAME = str(env.get('SESSION_NAME', 'FileStream'))
-    FORCE_SUB_ID = env.get('FORCE_SUB_ID', None)
-    FORCE_SUB = env.get('FORCE_UPDATES_CHANNEL', False)
+    API_ID = int(env.get("30658399"))
+    API_HASH = str(env.get("9827084439df5d4d31e07c3fa8e441cd"))
+    BOT_TOKEN = str(env.get("8473951219:AAFCIMVWa6iwCJgiMtOEha8g4MdyT8N3tQg"))
+    OWNER_ID = int(env.get('2112998631'))
+    WORKERS = int(env.get("6"))  # 6 workers = 6 commands at once
+    DATABASE_URL = str(env.get('mongodb+srv://opparth106:Parthislive@cluster0.0hh3m9a.mongodb.net/?appName=Cluster0'))
+    UPDATES_CHANNEL = str(env.get("Telegram"))
+    SESSION_NAME = str(env.get('FileStream'))
+    FORCE_SUB_ID = env.get(None)
+    FORCE_SUB = env.get(False)
     FORCE_SUB = True if str(FORCE_SUB).lower() == "true" else False
     SLEEP_THRESHOLD = int(env.get("SLEEP_THRESHOLD", "60"))
     FILE_PIC = env.get('FILE_PIC', "https://graph.org/file/5bb9935be0229adf98b73.jpg")
